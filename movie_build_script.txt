@@ -1,0 +1,105 @@
+"D:\10_clean_07\ElDewrito_unclean\maps\tags.dat"
+
+SetVariable working_directory "C:\Users\Fox\Desktop\work\movie2"
+
+# Create our mod package
+CreateModPackage
+!SPECIAL!
+Better Grab Some Popcorn!
+All Honor And Glory To God
+1.0
+Multiplayer
+
+# Create our scenario that everything will be setup in
+GenerateCanvas
+levels\eldewrito\movie_set\movie_set
+Film Premiere
+Grab Some Popcorn!
+Glory To God
+50777
+
+# Increase world bounds
+RunCommands "working_directory\command_scripts\world_bounds.cmds"
+
+# Add and change some stuff for the chief model
+RunCommands "working_directory\command_scripts\models\chief_changes.cmds"
+
+# Empty render model to clone and write to for our custom models
+RunCommands "working_directory\command_scripts\models\empty_render_model.cmds"
+
+# Basic collision model so all converted scenery objects can be moved around and scaled nicely
+RunCommands "working_directory\command_scripts\models\basic_scenery_collision.cmds"
+
+# Aiming vector model that all script objects will use and share
+RunCommands "working_directory\command_scripts\models\aiming_vector_model_setup.cmds"
+
+# Forge menu categories
+RunCommands "working_directory\command_scripts\forge_categories.cmds"
+
+# Create some props for our movie to use in forge
+RunCommands "working_directory\command_scripts\props\script_props.cmds"
+RunCommands "working_directory\command_scripts\fx_attachments.cmds"
+
+RunCommands "working_directory\command_scripts\props\misc_prop_tools.cmds"
+RunCommands "working_directory\command_scripts\props\misc_props.cmds"
+RunCommands "working_directory\command_scripts\props\sky_box_props.cmds"
+RunCommands "working_directory\command_scripts\props\animated_scenery_props.cmds"
+
+# RunCommands "working_directory\command_scripts\geo_props\icebox_geo_props.cmds"
+# RunCommands "working_directory\command_scripts\geo_props\diamondback_geo_props.cmds"
+# RunCommands "working_directory\command_scripts\geo_props\reactor_geo_props.cmds"
+# RunCommands "working_directory\command_scripts\geo_props\edge_geo_props.cmds"
+# RunCommands "working_directory\command_scripts\geo_props\standoff_geo_props.cmds"
+# RunCommands "working_directory\command_scripts\geo_props\narrows_geo_props.cmds"
+# RunCommands "working_directory\command_scripts\geo_props\last_resort_geo_props.cmds"
+# RunCommands "working_directory\command_scripts\geo_props\the_pit_geo_props.cmds"
+# RunCommands "working_directory\command_scripts\geo_props\high_ground_geo_props.cmds"
+# RunCommands "working_directory\command_scripts\geo_props\valhalla_geo_props.cmds"
+# RunCommands "working_directory\command_scripts\geo_props\sandtrap_geo_props.cmds"
+
+# Create ai related tags
+RunCommands "working_directory\command_scripts\ai\create_ai_dash_melee.cmds"
+RunCommands "working_directory\command_scripts\ai\create_style_tags.cmds"
+RunCommands "working_directory\command_scripts\ai\create_mp_generic_char.cmds"
+RunCommands "working_directory\command_scripts\ai\create_script_bipd_ai.cmds"
+
+# Cutscene title strings
+RunCommands "working_directory\command_scripts\film_memory\memory_movie_messages.cmds"
+
+# Setup our scenario
+EditTag levels\eldewrito\movie_set\movie_set.scenario
+
+RunCommands "working_directory\command_scripts\scripting\script_objects_crate.cmds"
+RunCommands "working_directory\command_scripts\scripting\script_objects_scenery.cmds"
+RunCommands "working_directory\command_scripts\scripting\script_objects_vehicle.cmds"
+RunCommands "working_directory\command_scripts\scripting\script_objects_biped.cmds"
+
+RunCommands "working_directory\command_scripts\scripting\script_cutscene_flags.cmds"
+
+RunCommands "working_directory\command_scripts\film_memory\memory_cutscene_titles.cmds"
+
+RunCommands "working_directory\command_scripts\film_memory\memory_cutscene_cameras.cmds"
+
+AddBlockElements UnitSeatsMapping
+SetField UnitSeatsMapping[*].Unit objects\eldewrito\movie\scripting\script_bipd.biped
+SetField UnitSeatsMapping[*].Seats1 Seat0
+# AddBlockElements UnitSeatsMapping
+# SetField UnitSeatsMapping[*].Unit objects\eldewrito\movie\scripting\script_vehi.vehicle
+# SetField UnitSeatsMapping[*].Seats1 Seat0
+
+RunCommands "working_directory\command_scripts\ai\squads.cmds"
+
+# Compile movie blam script
+CompileScripts "working_directory\movie_halo_script.txt"
+
+SaveTagChanges
+Exit
+
+RunCommands "working_directory\command_scripts\ai\pathfinding_platform.cmds"
+
+# objects\eldewrito\movie\props\monitor_texcam.shader
+# Foreach mode startingwith: objects\eldewrito\reforge\ addblockelements Materials 1
+# Foreach mode startingwith: objects\eldewrito\reforge\ setfield Materials[*].RenderMethod objects\eldewrito\forge\camera\texture_camera_output.shader
+
+SaveModPackage
+
