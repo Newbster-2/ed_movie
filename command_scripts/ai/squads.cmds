@@ -1,0 +1,45 @@
+AddBlockElements Squads
+SetField Squads[*].Name "squad0"
+SetField Squads[*].Flags Blind,Deaf,InitiallyPlaced
+SetField Squads[*].Team Player
+SetField Squads[*].ParentSquadGroupIndex -1
+SetField Squads[*].InitialZoneIndex -1
+SetField Squads[*].ObjectiveIndex -1
+SetField Squads[*].ObjectiveRoleIndex -1
+SetField Squads[*].EditorFolderIndexNew -1
+
+StringId Add spawn0
+AddBlockElements Squads[*].SpawnPoints
+SetField Squads[*].SpawnPoints[*].Name spawn0
+SetField Squads[*].SpawnPoints[*].FireteamIndex 0
+SetField Squads[*].SpawnPoints[*].Point.Position 0 0 0
+SetField Squads[*].SpawnPoints[*].Point.Facing 0 0 0
+SetField Squads[*].SpawnPoints[*].Point.ReferenceFrame 0
+SetField Squads[*].SpawnPoints[*].Point.BspIndex -1
+SetField Squads[*].SpawnPoints[*].Flags AlwaysPlace
+SetField Squads[*].SpawnPoints[*].CharacterTypeIndex -1
+SetField Squads[*].SpawnPoints[*].InitialPrimaryWeaponIndex -1
+SetField Squads[*].SpawnPoints[*].InitialSecondaryWeaponIndex -1
+SetField Squads[*].SpawnPoints[*].InitialEquipmentIndexNew -1
+SetField Squads[*].SpawnPoints[*].VehicleTypeIndex -1
+SetField Squads[*].SpawnPoints[*].SeatType Default
+SetField Squads[*].SpawnPoints[*].SwarmCount -1
+SetField Squads[*].SpawnPoints[*].EmitterVehicleIndex -1
+SetField Squads[*].SpawnPoints[*].EmitterGiantIndex -1
+SetField Squads[*].SpawnPoints[*].EmitterBipedIndex -1
+SetField Squads[*].SpawnPoints[*].PlacementScriptIndex -1
+SetField Squads[*].SpawnPoints[*].PointSetIndex -1
+
+AddBlockElements Squads[*].DesignerFireteams
+SetField Squads[*].DesignerFireteams[*].SpawnCount 1
+SetField Squads[*].DesignerFireteams[*].GrenadeType None
+SetField Squads[*].DesignerFireteams[*].MajorUpgrade -1
+SetField Squads[*].DesignerFireteams[*].VehicleTypeIndex -1
+SetField Squads[*].DesignerFireteams[*].CommandScriptIndex -1
+SetField Squads[*].DesignerFireteams[*].PointSetIndex -1
+
+AddBlockElements Squads[*].DesignerFireteams[*].CharacterType
+SetField Squads[*].DesignerFireteams[*].CharacterType[0].CharacterTypeIndex 0
+
+AddBlockElements CharacterPalette
+SetField CharacterPalette[*].Instance objects\eldewrito\movie\scripting\script_bipd_ai.character

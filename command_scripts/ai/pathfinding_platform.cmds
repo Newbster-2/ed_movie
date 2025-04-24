@@ -1,0 +1,78 @@
+DuplicateTag objects\eldewrito\forge\misc\empty_render_model.render_model objects\eldewrito\movie\scripting\pathfinding_platform
+EditTag objects\eldewrito\movie\scripting\pathfinding_platform.render_model
+ReplaceRenderGeometry "working_directory\models\pathfinding\pathfinding_platform.dae" trianglestrip
+SetField Materials[0].RenderMethod objects\eldewrito\reforge\shaders\invisible.shader_halogram
+SaveTagChanges
+Exit
+
+ImportCollisionGeometry "working_directory\models\pathfinding\pathfinding_platform.dae" objects\eldewrito\movie\scripting\pathfinding_platform
+EditTag objects\eldewrito\movie\scripting\pathfinding_platform.collision_model
+Foreach Regions Foreach Permutations Foreach Bsps Foreach Geometry.Surfaces Setfield Flags Invisible
+SetField Nodes[0].Name root
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\movie\scripting\pathfinding_platform
+EditTag objects\eldewrito\movie\scripting\pathfinding_platform.model
+SetField RenderModel objects\eldewrito\movie\scripting\pathfinding_platform.render_model
+SetField CollisionModel objects\eldewrito\movie\scripting\pathfinding_platform.collision_model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+SaveTagChanges
+Exit
+
+CreateTag bloc objects\eldewrito\movie\scripting\pathfinding_platform
+EditTag objects\eldewrito\movie\scripting\pathfinding_platform.crate
+SetField ObjectType.Halo3ODST Crate
+SetField ObjectFlags.Flags DoesNotCastShadow
+SetField BoundingRadius 500
+SetField Model objects\eldewrito\movie\scripting\pathfinding_platform.model
+AddBlockElements MultiplayerObject
+SetField MultiplayerObject[0].Flags OnlyVisibleInEditor,CandyMonitorShouldIgnore
+SetField MultiplayerObject[0].DefaultSpawnTime 0
+SetField MultiplayerObject[0].DefaultAbandonTime 32000
+SaveTagChanges
+Exit
+
+# Add to forge palette if you want to move it, but then has the chance to be deleted, but you can respawn via scripting and editor folders
+
+EditTag levels\eldewrito\movie_set\movie_set_bsp_0.scenario_structure_bsp
+RemoveBlockElements PathfindingData 0 *
+GeneratePathfindingData objects\eldewrito\movie\scripting\pathfinding_platform
+SetField PathfindingData[0].ObjectReferences[0].ObjectId.UniqueId 44444 444
+SetField PathfindingData[0].ObjectReferences[0].ObjectId.Type.Halo3ODST Crate
+EditPathfindingGeometry
+SaveTagChanges
+Exit
+
+EditTag levels\eldewrito\movie_set\movie_set.scenario
+AddBlockElements Crates
+SetField Crates[*].PaletteIndex 1
+SetField Crates[*].NameIndex -1
+SetField Crates[*].Position 0 0 -1
+SetField Crates[*].ObjectId.UniqueId 44444 444
+SetField Crates[*].ObjectId.OriginBspIndex -1
+SetField Crates[*].ObjectId.Type.Halo3ODST Crate
+SetField Crates[*].ObjectId.Source Editor
+SetField Crates[*].EditingBoundToBsp -1
+SetField Crates[*].EditorFolder -1
+SetField Crates[*].ParentId.NameIndex -1
+SetField Crates[*].CanAttachToBspFlags 1
+SetField Crates[*].Multiplayer.Team Neutral
+SetField Crates[*].Multiplayer.MapVariantParent.NameIndex -1
+SetField Crates[*].PathfindingPolicy Standard
+AddBlockElements Crates[*].PathfindingReferences
+SetField Crates[*].PathfindingReferences[0].BspIndex -1
+SetField Crates[*].PathfindingReferences[0].PathfindingObjectIndex 0
+
+AddBlockElements CratePalette
+SetField CratePalette[*].Object objects\eldewrito\movie\scripting\pathfinding_platform.crate
+
+AddBlockElements ObjectReferenceFrames
+SetField ObjectReferenceFrames[*].ObjectHandle 44444 444
+SetField ObjectReferenceFrames[*].OriginBspIndex -1
+SetField ObjectReferenceFrames[*].ObjectType.Halo3ODST Crate
+SetField ObjectReferenceFrames[*].Source Editor
+SetField ObjectReferenceFrames[*].NodeIndex 0
+SetField ObjectReferenceFrames[*].ProjectionAxis 2
+SaveTagChanges
+Exit

@@ -1,0 +1,13 @@
+EditTag levels\multi\s3d_turf\turf_train.scenery
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+AddForgeItem "Monorail Train" "ANIMATED SCENERY" levels\multi\s3d_turf\turf_train.scenery
+
+EditTag levels\multi\s3d_turf\turf_hornet.scenery
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+AddForgeItem "Search Hornet" "ANIMATED SCENERY" levels\multi\s3d_turf\turf_hornet.scenery

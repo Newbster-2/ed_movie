@@ -1,0 +1,91 @@
+AddBlockElements ObjectNames 10
+ForEach ObjectNames From: 90 To: 99 SetField ObjectType.Halo3ODST Biped
+SetField ObjectNames[90].Name "bipd0"
+SetField ObjectNames[91].Name "bipd1"
+SetField ObjectNames[92].Name "bipd2"
+SetField ObjectNames[93].Name "bipd3"
+SetField ObjectNames[94].Name "bipd4"
+SetField ObjectNames[95].Name "bipd5"
+SetField ObjectNames[96].Name "bipd6"
+SetField ObjectNames[97].Name "bipd7"
+SetField ObjectNames[98].Name "bipd8"
+SetField ObjectNames[99].Name "bipd9"
+SetField ObjectNames[90].PlacementIndex 0
+SetField ObjectNames[91].PlacementIndex 1
+SetField ObjectNames[92].PlacementIndex 2
+SetField ObjectNames[93].PlacementIndex 3
+SetField ObjectNames[94].PlacementIndex 4
+SetField ObjectNames[95].PlacementIndex 5
+SetField ObjectNames[96].PlacementIndex 6
+SetField ObjectNames[97].PlacementIndex 7
+SetField ObjectNames[98].PlacementIndex 8
+SetField ObjectNames[99].PlacementIndex 9
+
+AddBlockElements BipedPalette
+SetField BipedPalette[0].Object objects\eldewrito\movie\scripting\script_bipd.biped
+
+AddBlockElements Bipeds 10
+ForEach Bipeds SetField ObjectId.OriginBspIndex -1
+ForEach Bipeds SetField ObjectId.Type.Halo3ODST Biped
+ForEach Bipeds SetField ObjectId.Source Editor
+ForEach Bipeds SetField EditingBoundToBsp -1
+ForEach Bipeds SetField EditorFolder -1
+ForEach Bipeds SetField ParentId.NameIndex -1
+ForEach Bipeds SetField CanAttachToBspFlags 1
+SetField Bipeds[0].NameIndex 90
+SetField Bipeds[1].NameIndex 91
+SetField Bipeds[2].NameIndex 92
+SetField Bipeds[3].NameIndex 93
+SetField Bipeds[4].NameIndex 94
+SetField Bipeds[5].NameIndex 95
+SetField Bipeds[6].NameIndex 96
+SetField Bipeds[7].NameIndex 97
+SetField Bipeds[8].NameIndex 98
+SetField Bipeds[9].NameIndex 99
+SetField Bipeds[0].Position 0.0 3 0
+SetField Bipeds[1].Position 0.1 3 0
+SetField Bipeds[2].Position 0.2 3 0
+SetField Bipeds[3].Position 0.3 3 0
+SetField Bipeds[4].Position 0.4 3 0
+SetField Bipeds[5].Position 0.5 3 0
+SetField Bipeds[6].Position 0.6 3 0
+SetField Bipeds[7].Position 0.7 3 0
+SetField Bipeds[8].Position 0.8 3 0
+SetField Bipeds[9].Position 0.9 3 0
+
+AddBlockElements TriggerVolumes 10
+ForEach TriggerVolumes From: 90 To: 99 SetField NodeName root
+ForEach TriggerVolumes From: 90 To: 99 SetField Forward 1 0 0
+ForEach TriggerVolumes From: 90 To: 99 SetField Up 0 0 1
+ForEach TriggerVolumes From: 90 To: 99 SetField KillVolume -1
+ForEach TriggerVolumes From: 90 To: 99 SetField EditorFolderIndex -1
+StringID Add id_bipd0
+StringID Add id_bipd1
+StringID Add id_bipd2
+StringID Add id_bipd3
+StringID Add id_bipd4
+StringID Add id_bipd5
+StringID Add id_bipd6
+StringID Add id_bipd7
+StringID Add id_bipd8
+StringID Add id_bipd9
+SetField TriggerVolumes[90].Name id_bipd0
+SetField TriggerVolumes[91].Name id_bipd1
+SetField TriggerVolumes[92].Name id_bipd2
+SetField TriggerVolumes[93].Name id_bipd3
+SetField TriggerVolumes[94].Name id_bipd4
+SetField TriggerVolumes[95].Name id_bipd5
+SetField TriggerVolumes[96].Name id_bipd6
+SetField TriggerVolumes[97].Name id_bipd7
+SetField TriggerVolumes[98].Name id_bipd8
+SetField TriggerVolumes[99].Name id_bipd9
+SetField TriggerVolumes[90].ObjectName 90
+SetField TriggerVolumes[91].ObjectName 91
+SetField TriggerVolumes[92].ObjectName 92
+SetField TriggerVolumes[93].ObjectName 93
+SetField TriggerVolumes[94].ObjectName 94
+SetField TriggerVolumes[95].ObjectName 95
+SetField TriggerVolumes[96].ObjectName 96
+SetField TriggerVolumes[97].ObjectName 97
+SetField TriggerVolumes[98].ObjectName 98
+SetField TriggerVolumes[99].ObjectName 99

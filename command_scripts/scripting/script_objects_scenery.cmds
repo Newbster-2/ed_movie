@@ -1,0 +1,377 @@
+AddBlockElements ObjectNames 50
+ForEach ObjectNames From: 30 To: 79 SetField ObjectType.Halo3ODST Scenery
+SetField ObjectNames[30].Name "scen0"
+SetField ObjectNames[31].Name "scen1"
+SetField ObjectNames[32].Name "scen2"
+SetField ObjectNames[33].Name "scen3"
+SetField ObjectNames[34].Name "scen4"
+SetField ObjectNames[35].Name "scen5"
+SetField ObjectNames[36].Name "scen6"
+SetField ObjectNames[37].Name "scen7"
+SetField ObjectNames[38].Name "scen8"
+SetField ObjectNames[39].Name "scen9"
+SetField ObjectNames[40].Name "scen10"
+SetField ObjectNames[41].Name "scen11"
+SetField ObjectNames[42].Name "scen12"
+SetField ObjectNames[43].Name "scen13"
+SetField ObjectNames[44].Name "scen14"
+SetField ObjectNames[45].Name "scen15"
+SetField ObjectNames[46].Name "scen16"
+SetField ObjectNames[47].Name "scen17"
+SetField ObjectNames[48].Name "scen18"
+SetField ObjectNames[49].Name "scen19"
+SetField ObjectNames[50].Name "scen20"
+SetField ObjectNames[51].Name "scen21"
+SetField ObjectNames[52].Name "scen22"
+SetField ObjectNames[53].Name "scen23"
+SetField ObjectNames[54].Name "scen24"
+SetField ObjectNames[55].Name "scen25"
+SetField ObjectNames[56].Name "scen26"
+SetField ObjectNames[57].Name "scen27"
+SetField ObjectNames[58].Name "scen28"
+SetField ObjectNames[59].Name "scen29"
+SetField ObjectNames[60].Name "scen30"
+SetField ObjectNames[61].Name "scen31"
+SetField ObjectNames[62].Name "scen32"
+SetField ObjectNames[63].Name "scen33"
+SetField ObjectNames[64].Name "scen34"
+SetField ObjectNames[65].Name "scen35"
+SetField ObjectNames[66].Name "scen36"
+SetField ObjectNames[67].Name "scen37"
+SetField ObjectNames[68].Name "scen38"
+SetField ObjectNames[69].Name "scen39"
+SetField ObjectNames[70].Name "scen40"
+SetField ObjectNames[71].Name "scen41"
+SetField ObjectNames[72].Name "scen42"
+SetField ObjectNames[73].Name "scen43"
+SetField ObjectNames[74].Name "scen44"
+SetField ObjectNames[75].Name "scen45"
+SetField ObjectNames[76].Name "scen46"
+SetField ObjectNames[77].Name "scen47"
+SetField ObjectNames[78].Name "scen48"
+SetField ObjectNames[79].Name "scen49"
+SetField ObjectNames[30].PlacementIndex 0
+SetField ObjectNames[31].PlacementIndex 1
+SetField ObjectNames[32].PlacementIndex 2
+SetField ObjectNames[33].PlacementIndex 3
+SetField ObjectNames[34].PlacementIndex 4
+SetField ObjectNames[35].PlacementIndex 5
+SetField ObjectNames[36].PlacementIndex 6
+SetField ObjectNames[37].PlacementIndex 7
+SetField ObjectNames[38].PlacementIndex 8
+SetField ObjectNames[39].PlacementIndex 9
+SetField ObjectNames[40].PlacementIndex 10
+SetField ObjectNames[41].PlacementIndex 11
+SetField ObjectNames[42].PlacementIndex 12
+SetField ObjectNames[43].PlacementIndex 13
+SetField ObjectNames[44].PlacementIndex 14
+SetField ObjectNames[45].PlacementIndex 15
+SetField ObjectNames[46].PlacementIndex 16
+SetField ObjectNames[47].PlacementIndex 17
+SetField ObjectNames[48].PlacementIndex 18
+SetField ObjectNames[49].PlacementIndex 19
+SetField ObjectNames[50].PlacementIndex 20
+SetField ObjectNames[51].PlacementIndex 21
+SetField ObjectNames[52].PlacementIndex 22
+SetField ObjectNames[53].PlacementIndex 23
+SetField ObjectNames[54].PlacementIndex 24
+SetField ObjectNames[55].PlacementIndex 25
+SetField ObjectNames[56].PlacementIndex 26
+SetField ObjectNames[57].PlacementIndex 27
+SetField ObjectNames[58].PlacementIndex 28
+SetField ObjectNames[59].PlacementIndex 29
+SetField ObjectNames[60].PlacementIndex 30
+SetField ObjectNames[61].PlacementIndex 31
+SetField ObjectNames[62].PlacementIndex 32
+SetField ObjectNames[63].PlacementIndex 33
+SetField ObjectNames[64].PlacementIndex 34
+SetField ObjectNames[65].PlacementIndex 35
+SetField ObjectNames[66].PlacementIndex 36
+SetField ObjectNames[67].PlacementIndex 37
+SetField ObjectNames[68].PlacementIndex 38
+SetField ObjectNames[69].PlacementIndex 39
+SetField ObjectNames[70].PlacementIndex 40
+SetField ObjectNames[71].PlacementIndex 41
+SetField ObjectNames[72].PlacementIndex 42
+SetField ObjectNames[73].PlacementIndex 43
+SetField ObjectNames[74].PlacementIndex 44
+SetField ObjectNames[75].PlacementIndex 45
+SetField ObjectNames[76].PlacementIndex 46
+SetField ObjectNames[77].PlacementIndex 47
+SetField ObjectNames[78].PlacementIndex 48
+SetField ObjectNames[79].PlacementIndex 49
+
+AddBlockElements SceneryPalette
+SetField SceneryPalette[0].Object objects\eldewrito\movie\scripting\script_scen.scenery
+
+AddBlockElements Scenery 50
+ForEach Scenery SetField ObjectId.OriginBspIndex -1
+ForEach Scenery SetField ObjectId.Type.Halo3ODST Scenery
+ForEach Scenery SetField ObjectId.Source Editor
+ForEach Scenery SetField EditingBoundToBsp -1
+ForEach Scenery SetField EditorFolder -1
+ForEach Scenery SetField ParentId.NameIndex -1
+ForEach Scenery SetField CanAttachToBspFlags 1
+ForEach Scenery SetField HavokMoppIndex -1
+ForEach Scenery SetField AiSpawningSquad -1
+ForEach Scenery SetField Multiplayer.Team Neutral
+ForEach Scenery SetField Multiplayer.MapVariantParent.NameIndex -1
+SetField Scenery[0].NameIndex 30
+SetField Scenery[1].NameIndex 31
+SetField Scenery[2].NameIndex 32
+SetField Scenery[3].NameIndex 33
+SetField Scenery[4].NameIndex 34
+SetField Scenery[5].NameIndex 35
+SetField Scenery[6].NameIndex 36
+SetField Scenery[7].NameIndex 37
+SetField Scenery[8].NameIndex 38
+SetField Scenery[9].NameIndex 39
+SetField Scenery[10].NameIndex 40
+SetField Scenery[11].NameIndex 41
+SetField Scenery[12].NameIndex 42
+SetField Scenery[13].NameIndex 43
+SetField Scenery[14].NameIndex 44
+SetField Scenery[15].NameIndex 45
+SetField Scenery[16].NameIndex 46
+SetField Scenery[17].NameIndex 47
+SetField Scenery[18].NameIndex 48
+SetField Scenery[19].NameIndex 49
+SetField Scenery[20].NameIndex 50
+SetField Scenery[21].NameIndex 51
+SetField Scenery[22].NameIndex 52
+SetField Scenery[23].NameIndex 53
+SetField Scenery[24].NameIndex 54
+SetField Scenery[25].NameIndex 55
+SetField Scenery[26].NameIndex 56
+SetField Scenery[27].NameIndex 57
+SetField Scenery[28].NameIndex 58
+SetField Scenery[29].NameIndex 59
+SetField Scenery[30].NameIndex 60
+SetField Scenery[31].NameIndex 61
+SetField Scenery[32].NameIndex 62
+SetField Scenery[33].NameIndex 63
+SetField Scenery[34].NameIndex 64
+SetField Scenery[35].NameIndex 65
+SetField Scenery[36].NameIndex 66
+SetField Scenery[37].NameIndex 67
+SetField Scenery[38].NameIndex 68
+SetField Scenery[39].NameIndex 69
+SetField Scenery[40].NameIndex 70
+SetField Scenery[41].NameIndex 71
+SetField Scenery[42].NameIndex 72
+SetField Scenery[43].NameIndex 73
+SetField Scenery[44].NameIndex 74
+SetField Scenery[45].NameIndex 75
+SetField Scenery[46].NameIndex 76
+SetField Scenery[47].NameIndex 77
+SetField Scenery[48].NameIndex 78
+SetField Scenery[49].NameIndex 79
+SetField Scenery[0].Position 0.0 1 0
+SetField Scenery[1].Position 0.1 1 0
+SetField Scenery[2].Position 0.2 1 0
+SetField Scenery[3].Position 0.3 1 0
+SetField Scenery[4].Position 0.4 1 0
+SetField Scenery[5].Position 0.5 1 0
+SetField Scenery[6].Position 0.6 1 0
+SetField Scenery[7].Position 0.7 1 0
+SetField Scenery[8].Position 0.8 1 0
+SetField Scenery[9].Position 0.9 1 0
+SetField Scenery[10].Position 1.0 1 0
+SetField Scenery[11].Position 1.1 1 0
+SetField Scenery[12].Position 1.2 1 0
+SetField Scenery[13].Position 1.3 1 0
+SetField Scenery[14].Position 1.4 1 0
+SetField Scenery[15].Position 1.5 1 0
+SetField Scenery[16].Position 1.6 1 0
+SetField Scenery[17].Position 1.7 1 0
+SetField Scenery[18].Position 1.8 1 0
+SetField Scenery[19].Position 1.9 1 0
+SetField Scenery[20].Position 2.0 1 0
+SetField Scenery[21].Position 2.1 1 0
+SetField Scenery[22].Position 2.2 1 0
+SetField Scenery[23].Position 2.3 1 0
+SetField Scenery[24].Position 2.4 1 0
+SetField Scenery[25].Position 2.5 1 0
+SetField Scenery[26].Position 2.6 1 0
+SetField Scenery[27].Position 2.7 1 0
+SetField Scenery[28].Position 2.8 1 0
+SetField Scenery[29].Position 2.9 1 0
+SetField Scenery[30].Position 3.0 1 0
+SetField Scenery[31].Position 3.1 1 0
+SetField Scenery[32].Position 3.2 1 0
+SetField Scenery[33].Position 3.3 1 0
+SetField Scenery[34].Position 3.4 1 0
+SetField Scenery[35].Position 3.5 1 0
+SetField Scenery[36].Position 3.6 1 0
+SetField Scenery[37].Position 3.7 1 0
+SetField Scenery[38].Position 3.8 1 0
+SetField Scenery[39].Position 3.9 1 0
+SetField Scenery[40].Position 4.0 1 0
+SetField Scenery[41].Position 4.1 1 0
+SetField Scenery[42].Position 4.2 1 0
+SetField Scenery[43].Position 4.3 1 0
+SetField Scenery[44].Position 4.4 1 0
+SetField Scenery[45].Position 4.5 1 0
+SetField Scenery[46].Position 4.6 1 0
+SetField Scenery[47].Position 4.7 1 0
+SetField Scenery[48].Position 4.8 1 0
+SetField Scenery[49].Position 4.9 1 0
+
+AddBlockElements TriggerVolumes 50
+ForEach TriggerVolumes From: 30 To: 79 SetField NodeName root
+ForEach TriggerVolumes From: 30 To: 79 SetField Forward 1 0 0
+ForEach TriggerVolumes From: 30 To: 79 SetField Up 0 0 1
+ForEach TriggerVolumes From: 30 To: 79 SetField Position -1.5 -1.5 -1.5
+ForEach TriggerVolumes From: 30 To: 79 SetField Extents 3 3 3
+ForEach TriggerVolumes From: 30 To: 79 SetField KillVolume -1
+ForEach TriggerVolumes From: 30 To: 79 SetField EditorFolderIndex -1
+StringID Add vol0
+StringID Add vol1
+StringID Add vol2
+StringID Add vol3
+StringID Add vol4
+StringID Add vol5
+StringID Add vol6
+StringID Add vol7
+StringID Add vol8
+StringID Add vol9
+StringID Add vol10
+StringID Add vol11
+StringID Add vol12
+StringID Add vol13
+StringID Add vol14
+StringID Add vol15
+StringID Add vol16
+StringID Add vol17
+StringID Add vol18
+StringID Add vol19
+StringID Add vol20
+StringID Add vol21
+StringID Add vol22
+StringID Add vol23
+StringID Add vol24
+StringID Add vol25
+StringID Add vol26
+StringID Add vol27
+StringID Add vol28
+StringID Add vol29
+StringID Add vol30
+StringID Add vol31
+StringID Add vol32
+StringID Add vol33
+StringID Add vol34
+StringID Add vol35
+StringID Add vol36
+StringID Add vol37
+StringID Add vol38
+StringID Add vol39
+StringID Add vol40
+StringID Add vol41
+StringID Add vol42
+StringID Add vol43
+StringID Add vol44
+StringID Add vol45
+StringID Add vol46
+StringID Add vol47
+StringID Add vol48
+StringID Add vol49
+SetField TriggerVolumes[30].Name vol0
+SetField TriggerVolumes[31].Name vol1
+SetField TriggerVolumes[32].Name vol2
+SetField TriggerVolumes[33].Name vol3
+SetField TriggerVolumes[34].Name vol4
+SetField TriggerVolumes[35].Name vol5
+SetField TriggerVolumes[36].Name vol6
+SetField TriggerVolumes[37].Name vol7
+SetField TriggerVolumes[38].Name vol8
+SetField TriggerVolumes[39].Name vol9
+SetField TriggerVolumes[40].Name vol10
+SetField TriggerVolumes[41].Name vol11
+SetField TriggerVolumes[42].Name vol12
+SetField TriggerVolumes[43].Name vol13
+SetField TriggerVolumes[44].Name vol14
+SetField TriggerVolumes[45].Name vol15
+SetField TriggerVolumes[46].Name vol16
+SetField TriggerVolumes[47].Name vol17
+SetField TriggerVolumes[48].Name vol18
+SetField TriggerVolumes[49].Name vol19
+SetField TriggerVolumes[50].Name vol20
+SetField TriggerVolumes[51].Name vol21
+SetField TriggerVolumes[52].Name vol22
+SetField TriggerVolumes[53].Name vol23
+SetField TriggerVolumes[54].Name vol24
+SetField TriggerVolumes[55].Name vol25
+SetField TriggerVolumes[56].Name vol26
+SetField TriggerVolumes[57].Name vol27
+SetField TriggerVolumes[58].Name vol28
+SetField TriggerVolumes[59].Name vol29
+SetField TriggerVolumes[60].Name vol30
+SetField TriggerVolumes[61].Name vol31
+SetField TriggerVolumes[62].Name vol32
+SetField TriggerVolumes[63].Name vol33
+SetField TriggerVolumes[64].Name vol34
+SetField TriggerVolumes[65].Name vol35
+SetField TriggerVolumes[66].Name vol36
+SetField TriggerVolumes[67].Name vol37
+SetField TriggerVolumes[68].Name vol38
+SetField TriggerVolumes[69].Name vol39
+SetField TriggerVolumes[70].Name vol40
+SetField TriggerVolumes[71].Name vol41
+SetField TriggerVolumes[72].Name vol42
+SetField TriggerVolumes[73].Name vol43
+SetField TriggerVolumes[74].Name vol44
+SetField TriggerVolumes[75].Name vol45
+SetField TriggerVolumes[76].Name vol46
+SetField TriggerVolumes[77].Name vol47
+SetField TriggerVolumes[78].Name vol48
+SetField TriggerVolumes[79].Name vol49
+SetField TriggerVolumes[30].ObjectName 30
+SetField TriggerVolumes[31].ObjectName 31
+SetField TriggerVolumes[32].ObjectName 32
+SetField TriggerVolumes[33].ObjectName 33
+SetField TriggerVolumes[34].ObjectName 34
+SetField TriggerVolumes[35].ObjectName 35
+SetField TriggerVolumes[36].ObjectName 36
+SetField TriggerVolumes[37].ObjectName 37
+SetField TriggerVolumes[38].ObjectName 38
+SetField TriggerVolumes[39].ObjectName 39
+SetField TriggerVolumes[40].ObjectName 40
+SetField TriggerVolumes[41].ObjectName 41
+SetField TriggerVolumes[42].ObjectName 42
+SetField TriggerVolumes[43].ObjectName 43
+SetField TriggerVolumes[44].ObjectName 44
+SetField TriggerVolumes[45].ObjectName 45
+SetField TriggerVolumes[46].ObjectName 46
+SetField TriggerVolumes[47].ObjectName 47
+SetField TriggerVolumes[48].ObjectName 48
+SetField TriggerVolumes[49].ObjectName 49
+SetField TriggerVolumes[50].ObjectName 50
+SetField TriggerVolumes[51].ObjectName 51
+SetField TriggerVolumes[52].ObjectName 52
+SetField TriggerVolumes[53].ObjectName 53
+SetField TriggerVolumes[54].ObjectName 54
+SetField TriggerVolumes[55].ObjectName 55
+SetField TriggerVolumes[56].ObjectName 56
+SetField TriggerVolumes[57].ObjectName 57
+SetField TriggerVolumes[58].ObjectName 58
+SetField TriggerVolumes[59].ObjectName 59
+SetField TriggerVolumes[60].ObjectName 60
+SetField TriggerVolumes[61].ObjectName 61
+SetField TriggerVolumes[62].ObjectName 62
+SetField TriggerVolumes[63].ObjectName 63
+SetField TriggerVolumes[64].ObjectName 64
+SetField TriggerVolumes[65].ObjectName 65
+SetField TriggerVolumes[66].ObjectName 66
+SetField TriggerVolumes[67].ObjectName 67
+SetField TriggerVolumes[68].ObjectName 68
+SetField TriggerVolumes[69].ObjectName 69
+SetField TriggerVolumes[70].ObjectName 70
+SetField TriggerVolumes[71].ObjectName 71
+SetField TriggerVolumes[72].ObjectName 72
+SetField TriggerVolumes[73].ObjectName 73
+SetField TriggerVolumes[74].ObjectName 74
+SetField TriggerVolumes[75].ObjectName 75
+SetField TriggerVolumes[76].ObjectName 76
+SetField TriggerVolumes[77].ObjectName 77
+SetField TriggerVolumes[78].ObjectName 78
+SetField TriggerVolumes[79].ObjectName 79

@@ -1,0 +1,261 @@
+# We use this as the basis since we want to use vehicle_autoturret and other cool animation tricks
+CreateTag mode objects\eldewrito\forge\misc\aiming_vector
+EditTag objects\eldewrito\forge\misc\aiming_vector.render_model
+
+AddBlockElements Regions
+SetField Regions[0].Name default
+AddBlockElements Regions[0].Permutations
+SetField Regions[0].Permutations[0].Name default
+
+SetField InstanceStartingMeshIndex -1
+
+AddBlockElements Nodes 2
+SetField Nodes[0].Name root
+SetField Nodes[0].ParentNode -1
+SetField Nodes[0].FirstChildNode 1
+SetField Nodes[0].NextSiblingNode -1
+SetField Nodes[0].DefaultRotation 0 0 0 -1
+SetField Nodes[0].DefaultScale 1
+SetField Nodes[0].InverseForward 1 0 0
+SetField Nodes[0].InverseLeft 0 1 0
+SetField Nodes[0].InverseUp 0 0 1
+SetField Nodes[1].Name child
+SetField Nodes[1].ParentNode 0
+SetField Nodes[1].FirstChildNode -1
+SetField Nodes[1].NextSiblingNode -1
+SetField Nodes[1].DefaultRotation 0 0 0 -1
+SetField Nodes[1].DefaultScale 1
+SetField Nodes[1].InverseForward 1 0 0
+SetField Nodes[1].InverseLeft 0 1 0
+SetField Nodes[1].InverseUp 0 0 1
+
+AddBlockElements RuntimeNodeOrientations 2
+SetField RuntimeNodeOrientations[0].Rotation 0 0 0 -1
+SetField RuntimeNodeOrientations[0].Scale 1
+SetField RuntimeNodeOrientations[1].Rotation 0 0 0 -1
+SetField RuntimeNodeOrientations[1].Scale 1
+
+ReplaceRenderGeometry "working_directory\models\aiming_vector\aiming_vector.dae"
+
+SetField Materials[0].RenderMethod objects\eldewrito\reforge\shaders\rgb\matte.shader
+
+RunCommands "working_directory\command_scripts\models\marker_groups.cmds"
+
+SaveTagChanges
+Exit
+
+# Initial model for other tags to clone and populate
+CreateTag hlmt objects\eldewrito\forge\misc\aiming_vector_empty
+EditTag objects\eldewrito\forge\misc\aiming_vector_empty.model
+
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+
+AddBlockElements CollisionRegions
+SetField CollisionRegions[0].Name default
+AddBlockElements CollisionRegions[0].Permutations
+SetField CollisionRegions[0].Permutations[0].Name default
+
+AddBlockElements Nodes 2
+SetField Nodes[0].Name root
+SetField Nodes[0].ParentNode -1
+SetField Nodes[0].FirstChildNode 1
+SetField Nodes[0].NextSiblingNode -1
+SetField Nodes[0].DefaultRotation 0 0 0 -1
+SetField Nodes[0].DefaultScale 1
+SetField Nodes[0].Inverse 1 0 0 0 1 0 0 0 1 0 0 0
+SetField Nodes[1].Name child
+SetField Nodes[1].ParentNode 0
+SetField Nodes[1].FirstChildNode -1
+SetField Nodes[1].NextSiblingNode -1
+SetField Nodes[1].DefaultRotation 0 0 0 -1
+SetField Nodes[1].DefaultScale 1
+SetField Nodes[1].Inverse 1 0 0 0 1 0 0 0 1 0 0 0
+
+SaveTagChanges
+Exit
+
+# Minimal keyframed phmo
+CreateTag phmo objects\eldewrito\forge\misc\minimal_keyframed_physics
+EditTag objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+
+AddBlockElements RigidBodies
+SetField RigidBodies[0].MotionType Keyframed
+SetField RigidBodies[0].ShapeType Pill
+
+AddBlockElements Materials 1
+SetField Materials[0].Name default
+SetField Materials[0].PhantomType -1
+
+AddBlockElements Pills 1
+SetField Pills[0].PhantomIndex -1
+SetField Pills[0].ProxyCollisionGroup 2
+SetField Pills[0].ShapeBase.Count 128
+
+AddBlockElements Nodes 2
+SetField Nodes[0].Name root
+SetField Nodes[0].Parent -1
+SetField Nodes[0].Sibling -1
+SetField Nodes[0].Child 1
+SetField Nodes[1].Name child
+SetField Nodes[1].Parent 0
+SetField Nodes[1].Sibling -1
+SetField Nodes[1].Child -1
+
+SaveTagChanges
+Exit
+
+# Minimal box phmo
+CreateTag phmo objects\eldewrito\forge\misc\minimal_box_physics
+EditTag objects\eldewrito\forge\misc\minimal_box_physics.physics_model
+
+AddBlockElements RigidBodies
+SetField RigidBodies[0].MotionType Box
+SetField RigidBodies[0].ShapeType Pill
+SetField RigidBodies[0].InertiaTensorScale 1
+SetField RigidBodies[0].Mass 10
+SetField RigidBodies[0].InertiaTensorX 0.024 0 0
+SetField RigidBodies[0].InertiaTensorY 0 0.024 0
+SetField RigidBodies[0].InertiaTensorZ 0 0 0.024
+
+AddBlockElements Materials 1
+SetField Materials[0].Name default
+SetField Materials[0].PhantomType -1
+
+AddBlockElements Pills 1
+SetField Pills[0].PhantomIndex -1
+SetField Pills[0].ProxyCollisionGroup 2
+SetField Pills[0].ShapeBase.Count 128
+
+AddBlockElements Nodes 2
+SetField Nodes[0].Name root
+SetField Nodes[0].Parent -1
+SetField Nodes[0].Sibling -1
+SetField Nodes[0].Child 1
+SetField Nodes[1].Name child
+SetField Nodes[1].Parent 0
+SetField Nodes[1].Sibling -1
+SetField Nodes[1].Child -1
+
+SaveTagChanges
+Exit
+
+# For all other object types
+ImportCollisionGeometry "working_directory\models\aiming_vector\aiming_vector_collision.dae" objects\eldewrito\forge\misc\aiming_vector_collision
+EditTag objects\eldewrito\forge\misc\aiming_vector_collision.collision_model
+
+ForEach Regions[0].Permutations[0].Bsps[0].Geometry.Surfaces SetField Flags Invisible
+
+RemoveBlockElements Regions[0].Permutations[0].BspPhysics 0 *
+RemoveBlockElements Regions[0].Permutations[0].BspMoppCodes 0 *
+
+AddBlockElements Nodes
+SetField Nodes[0].Name root
+SetField Nodes[0].ParentNode -1
+SetField Nodes[0].NextSiblingNode -1
+SetField Nodes[0].FirstChildNode 1
+SetField Nodes[1].Name child
+SetField Nodes[1].ParentNode 0
+SetField Nodes[1].NextSiblingNode -1
+SetField Nodes[1].FirstChildNode -1
+
+SaveTagChanges
+Exit
+
+# For scaleable trigger volumes with a scen tag
+ImportCollisionGeometry mopp "working_directory\models\aiming_vector\aiming_vector_collision.dae" objects\eldewrito\forge\misc\aiming_vector_collision_mopp
+EditTag objects\eldewrito\forge\misc\aiming_vector_collision_mopp.collision_model
+
+ForEach Regions[0].Permutations[0].Bsps[0].Geometry.Surfaces SetField Flags Invisible
+
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+
+MoppData import "working_directory\models\null_mopp_data.txt"
+
+AddBlockElements Nodes
+SetField Nodes[0].Name root
+SetField Nodes[0].ParentNode -1
+SetField Nodes[0].NextSiblingNode -1
+SetField Nodes[0].FirstChildNode 1
+SetField Nodes[1].Name child
+SetField Nodes[1].ParentNode 0
+SetField Nodes[1].NextSiblingNode -1
+SetField Nodes[1].FirstChildNode -1
+
+SaveTagChanges
+Exit
+
+# Animations that will be shared by use for the vehi, scen, and bipd
+ImportAnimation "working_directory\animations\vehicle_turret\any aim_still_up.JMO" objects\eldewrito\forge\misc\aiming_vector_animations
+
+EditTag objects\eldewrito\forge\misc\aiming_vector_animations.model_animation_graph
+
+AddBlockElements BlendScreens
+SetField BlendScreens[0].Label aiming
+SetField BlendScreens[0].RightYawPerFrame 90
+SetField BlendScreens[0].LeftYawPerFrame 90
+SetField BlendScreens[0].RightFrameCount 2
+SetField BlendScreens[0].LeftFrameCount 2
+SetField BlendScreens[0].DownPitchPerFrame 80
+SetField BlendScreens[0].UpPitchPerFrame 45
+SetField BlendScreens[0].DownPitchFrameCount 1
+SetField BlendScreens[0].UpPitchFrameCount 1
+
+SetField Animations[0].AnimationData.BlendScreen 0
+
+AddBlockElements Modes
+SetField Modes[0].Name any
+AddBlockElements Modes[0].WeaponClass
+SetField Modes[0].WeaponClass[0].Label any
+AddBlockElements Modes[0].WeaponClass[0].WeaponType
+SetField Modes[0].WeaponClass[0].WeaponType[0].Label any
+AddBlockElements Modes[0].WeaponClass[0].WeaponType[0].Set.Overlays
+SetField Modes[0].WeaponClass[0].WeaponType[0].Set.Overlays[0].Label aim_still_up
+SetField Modes[0].WeaponClass[0].WeaponType[0].Set.Overlays[0].GraphIndex -1
+
+AddBlockElements WeaponList
+SetField WeaponList[0].WeaponName any
+SetField WeaponList[0].WeaponClass any
+
+# StringID Add forward
+# StringID Add backward
+# StringID Add left
+# StringID Add right
+StringID Add spin_left
+StringID Add spin_left_c
+StringID Add spin_right
+StringID Add spin_right_c
+StringID Add spell_eldewrito
+StringID Add draw_frowny_face_head
+StringID Add draw_frowny_face_left_eye
+StringID Add draw_frowny_face_right_eye
+StringID Add draw_frowny_face_mouth
+StringID Add draw_frowny_face_question
+StringID Add draw_frowny_face_dot
+
+AddAnimation "working_directory\animations\biped\any forward.JMA"
+AddAnimation "working_directory\animations\biped\any backward.JMA"
+AddAnimation "working_directory\animations\biped\any left.JMA"
+AddAnimation "working_directory\animations\biped\any right.JMA"
+
+AddAnimation "working_directory\animations\scenery\any spin_left.JMR"
+AddAnimation "working_directory\animations\scenery\any spin_left_c.JMR"
+AddAnimation "working_directory\animations\scenery\any spin_right.JMR"
+AddAnimation "working_directory\animations\scenery\any spin_right_c.JMR"
+
+AddAnimation "working_directory\animations\scenery\any spell_eldewrito.JMR"
+AddAnimation "working_directory\animations\scenery\any draw_frowny_face_head.JMR"
+AddAnimation "working_directory\animations\scenery\any draw_frowny_face_left_eye.JMR"
+AddAnimation "working_directory\animations\scenery\any draw_frowny_face_right_eye.JMR"
+AddAnimation "working_directory\animations\scenery\any draw_frowny_face_mouth.JMR"
+AddAnimation "working_directory\animations\scenery\any draw_frowny_face_question.JMR"
+AddAnimation "working_directory\animations\scenery\any draw_frowny_face_dot.JMR"
+
+# AddAnimation "working_directory\animations\biped\any up.JMR"
+# AddAnimation "working_directory\animations\biped\any down.JMR"
+# AddAnimation "working_directory\animations\biped\any turn_left.JMR"
+# AddAnimation "working_directory\animations\biped\any turn_right.JMR"
+
+SaveTagChanges
+Exit

@@ -1,0 +1,369 @@
+AddBlockElements ObjectNames 30
+ForEach ObjectNames From: 0 To: 29 SetField ObjectType.Halo3ODST Crate
+SetField ObjectNames[0].Name "bloc0"
+SetField ObjectNames[1].Name "bloc1"
+SetField ObjectNames[2].Name "bloc2"
+SetField ObjectNames[3].Name "bloc3"
+SetField ObjectNames[4].Name "bloc4"
+SetField ObjectNames[5].Name "bloc5"
+SetField ObjectNames[6].Name "bloc6"
+SetField ObjectNames[7].Name "bloc7"
+SetField ObjectNames[8].Name "bloc8"
+SetField ObjectNames[9].Name "bloc9"
+SetField ObjectNames[10].Name "bloc10"
+SetField ObjectNames[11].Name "bloc11"
+SetField ObjectNames[12].Name "bloc12"
+SetField ObjectNames[13].Name "bloc13"
+SetField ObjectNames[14].Name "bloc14"
+SetField ObjectNames[15].Name "bloc15"
+SetField ObjectNames[16].Name "bloc16"
+SetField ObjectNames[17].Name "bloc17"
+SetField ObjectNames[18].Name "bloc18"
+SetField ObjectNames[19].Name "bloc19"
+SetField ObjectNames[20].Name "bloc20"
+SetField ObjectNames[21].Name "bloc21"
+SetField ObjectNames[22].Name "bloc22"
+SetField ObjectNames[23].Name "bloc23"
+SetField ObjectNames[24].Name "bloc24"
+SetField ObjectNames[25].Name "bloc25"
+SetField ObjectNames[26].Name "bloc26"
+SetField ObjectNames[27].Name "bloc27"
+SetField ObjectNames[28].Name "bloc28"
+SetField ObjectNames[29].Name "bloc29"
+SetField ObjectNames[0].PlacementIndex 0
+SetField ObjectNames[1].PlacementIndex 1
+SetField ObjectNames[2].PlacementIndex 2
+SetField ObjectNames[3].PlacementIndex 3
+SetField ObjectNames[4].PlacementIndex 4
+SetField ObjectNames[5].PlacementIndex 5
+SetField ObjectNames[6].PlacementIndex 6
+SetField ObjectNames[7].PlacementIndex 7
+SetField ObjectNames[8].PlacementIndex 8
+SetField ObjectNames[9].PlacementIndex 9
+SetField ObjectNames[10].PlacementIndex 10
+SetField ObjectNames[11].PlacementIndex 11
+SetField ObjectNames[12].PlacementIndex 12
+SetField ObjectNames[13].PlacementIndex 13
+SetField ObjectNames[14].PlacementIndex 14
+SetField ObjectNames[15].PlacementIndex 15
+SetField ObjectNames[16].PlacementIndex 16
+SetField ObjectNames[17].PlacementIndex 17
+SetField ObjectNames[18].PlacementIndex 18
+SetField ObjectNames[19].PlacementIndex 19
+SetField ObjectNames[20].PlacementIndex 20
+SetField ObjectNames[21].PlacementIndex 21
+SetField ObjectNames[22].PlacementIndex 22
+SetField ObjectNames[23].PlacementIndex 23
+SetField ObjectNames[24].PlacementIndex 24
+SetField ObjectNames[25].PlacementIndex 25
+SetField ObjectNames[26].PlacementIndex 26
+SetField ObjectNames[27].PlacementIndex 27
+SetField ObjectNames[28].PlacementIndex 28
+SetField ObjectNames[29].PlacementIndex 29
+
+AddBlockElements CratePalette
+SetField CratePalette[0].Object objects\eldewrito\movie\scripting\script_bloc.crate
+
+AddBlockElements Crates 30
+ForEach Crates SetField ObjectId.OriginBspIndex -1
+ForEach Crates SetField ObjectId.Type.Halo3ODST Crate
+ForEach Crates SetField ObjectId.Source Editor
+ForEach Crates SetField EditingBoundToBsp -1
+ForEach Crates SetField EditorFolder -1
+ForEach Crates SetField ParentId.NameIndex -1
+ForEach Crates SetField CanAttachToBspFlags 1
+ForEach Crates SetField Multiplayer.Team Neutral
+ForEach Crates SetField Multiplayer.MapVariantParent.NameIndex -1
+SetField Crates[0].NameIndex 0
+SetField Crates[1].NameIndex 1
+SetField Crates[2].NameIndex 2
+SetField Crates[3].NameIndex 3
+SetField Crates[4].NameIndex 4
+SetField Crates[5].NameIndex 5
+SetField Crates[6].NameIndex 6
+SetField Crates[7].NameIndex 7
+SetField Crates[8].NameIndex 8
+SetField Crates[9].NameIndex 9
+SetField Crates[10].NameIndex 10
+SetField Crates[11].NameIndex 11
+SetField Crates[12].NameIndex 12
+SetField Crates[13].NameIndex 13
+SetField Crates[14].NameIndex 14
+SetField Crates[15].NameIndex 15
+SetField Crates[16].NameIndex 16
+SetField Crates[17].NameIndex 17
+SetField Crates[18].NameIndex 18
+SetField Crates[19].NameIndex 19
+SetField Crates[20].NameIndex 20
+SetField Crates[21].NameIndex 21
+SetField Crates[22].NameIndex 22
+SetField Crates[23].NameIndex 23
+SetField Crates[24].NameIndex 24
+SetField Crates[25].NameIndex 25
+SetField Crates[26].NameIndex 26
+SetField Crates[27].NameIndex 27
+SetField Crates[28].NameIndex 28
+SetField Crates[29].NameIndex 29
+SetField Crates[0].Position 0.0 0 0
+SetField Crates[1].Position 0.1 0 0
+SetField Crates[2].Position 0.2 0 0
+SetField Crates[3].Position 0.3 0 0
+SetField Crates[4].Position 0.4 0 0
+SetField Crates[5].Position 0.5 0 0
+SetField Crates[6].Position 0.6 0 0
+SetField Crates[7].Position 0.7 0 0
+SetField Crates[8].Position 0.8 0 0
+SetField Crates[9].Position 0.9 0 0
+SetField Crates[10].Position 1.0 0 0
+SetField Crates[11].Position 1.1 0 0
+SetField Crates[12].Position 1.2 0 0
+SetField Crates[13].Position 1.3 0 0
+SetField Crates[14].Position 1.4 0 0
+SetField Crates[15].Position 1.5 0 0
+SetField Crates[16].Position 1.6 0 0
+SetField Crates[17].Position 1.7 0 0
+SetField Crates[18].Position 1.8 0 0
+SetField Crates[19].Position 1.9 0 0
+SetField Crates[20].Position 2.0 0 0
+SetField Crates[21].Position 2.1 0 0
+SetField Crates[22].Position 2.2 0 0
+SetField Crates[23].Position 2.3 0 0
+SetField Crates[24].Position 2.4 0 0
+SetField Crates[25].Position 2.5 0 0
+SetField Crates[26].Position 2.6 0 0
+SetField Crates[27].Position 2.7 0 0
+SetField Crates[28].Position 2.8 0 0
+SetField Crates[29].Position 2.9 0 0
+SetField Crates[0].ObjectId.UniqueId 40000 0
+SetField Crates[1].ObjectId.UniqueId 40001 1
+SetField Crates[2].ObjectId.UniqueId 40002 2
+SetField Crates[3].ObjectId.UniqueId 40003 3
+SetField Crates[4].ObjectId.UniqueId 40004 4
+SetField Crates[5].ObjectId.UniqueId 40005 5
+SetField Crates[6].ObjectId.UniqueId 40006 6
+SetField Crates[7].ObjectId.UniqueId 40007 7
+SetField Crates[8].ObjectId.UniqueId 40008 8
+SetField Crates[9].ObjectId.UniqueId 40009 9
+SetField Crates[10].ObjectId.UniqueId 40010 10
+SetField Crates[11].ObjectId.UniqueId 40011 11
+SetField Crates[12].ObjectId.UniqueId 40012 12
+SetField Crates[13].ObjectId.UniqueId 40013 13
+SetField Crates[14].ObjectId.UniqueId 40014 14
+SetField Crates[15].ObjectId.UniqueId 40015 15
+SetField Crates[16].ObjectId.UniqueId 40016 16
+SetField Crates[17].ObjectId.UniqueId 40017 17
+SetField Crates[18].ObjectId.UniqueId 40018 18
+SetField Crates[19].ObjectId.UniqueId 40019 19
+SetField Crates[20].ObjectId.UniqueId 40020 20
+SetField Crates[21].ObjectId.UniqueId 40021 21
+SetField Crates[22].ObjectId.UniqueId 40022 22
+SetField Crates[23].ObjectId.UniqueId 40023 23
+SetField Crates[24].ObjectId.UniqueId 40024 24
+SetField Crates[25].ObjectId.UniqueId 40025 25
+SetField Crates[26].ObjectId.UniqueId 40026 26
+SetField Crates[27].ObjectId.UniqueId 40027 27
+SetField Crates[28].ObjectId.UniqueId 40028 28
+SetField Crates[29].ObjectId.UniqueId 40029 29
+
+AddBlockElements TriggerVolumes 30
+ForEach TriggerVolumes From: 0 To: 29 SetField NodeName root
+ForEach TriggerVolumes From: 0 To: 29 SetField Forward 1 0 0
+ForEach TriggerVolumes From: 0 To: 29 SetField Up 0 0 1
+ForEach TriggerVolumes From: 0 To: 29 SetField KillVolume -1
+ForEach TriggerVolumes From: 0 To: 29 SetField EditorFolderIndex -1
+StringID Add id_bloc0
+StringID Add id_bloc1
+StringID Add id_bloc2
+StringID Add id_bloc3
+StringID Add id_bloc4
+StringID Add id_bloc5
+StringID Add id_bloc6
+StringID Add id_bloc7
+StringID Add id_bloc8
+StringID Add id_bloc9
+StringID Add id_bloc10
+StringID Add id_bloc11
+StringID Add id_bloc12
+StringID Add id_bloc13
+StringID Add id_bloc14
+StringID Add id_bloc15
+StringID Add id_bloc16
+StringID Add id_bloc17
+StringID Add id_bloc18
+StringID Add id_bloc19
+StringID Add id_bloc20
+StringID Add id_bloc21
+StringID Add id_bloc22
+StringID Add id_bloc23
+StringID Add id_bloc24
+StringID Add id_bloc25
+StringID Add id_bloc26
+StringID Add id_bloc27
+StringID Add id_bloc28
+StringID Add id_bloc29
+SetField TriggerVolumes[0].Name id_bloc0
+SetField TriggerVolumes[1].Name id_bloc1
+SetField TriggerVolumes[2].Name id_bloc2
+SetField TriggerVolumes[3].Name id_bloc3
+SetField TriggerVolumes[4].Name id_bloc4
+SetField TriggerVolumes[5].Name id_bloc5
+SetField TriggerVolumes[6].Name id_bloc6
+SetField TriggerVolumes[7].Name id_bloc7
+SetField TriggerVolumes[8].Name id_bloc8
+SetField TriggerVolumes[9].Name id_bloc9
+SetField TriggerVolumes[10].Name id_bloc10
+SetField TriggerVolumes[11].Name id_bloc11
+SetField TriggerVolumes[12].Name id_bloc12
+SetField TriggerVolumes[13].Name id_bloc13
+SetField TriggerVolumes[14].Name id_bloc14
+SetField TriggerVolumes[15].Name id_bloc15
+SetField TriggerVolumes[16].Name id_bloc16
+SetField TriggerVolumes[17].Name id_bloc17
+SetField TriggerVolumes[18].Name id_bloc18
+SetField TriggerVolumes[19].Name id_bloc19
+SetField TriggerVolumes[20].Name id_bloc20
+SetField TriggerVolumes[21].Name id_bloc21
+SetField TriggerVolumes[22].Name id_bloc22
+SetField TriggerVolumes[23].Name id_bloc23
+SetField TriggerVolumes[24].Name id_bloc24
+SetField TriggerVolumes[25].Name id_bloc25
+SetField TriggerVolumes[26].Name id_bloc26
+SetField TriggerVolumes[27].Name id_bloc27
+SetField TriggerVolumes[28].Name id_bloc28
+SetField TriggerVolumes[29].Name id_bloc29
+SetField TriggerVolumes[0].ObjectName 0
+SetField TriggerVolumes[1].ObjectName 1
+SetField TriggerVolumes[2].ObjectName 2
+SetField TriggerVolumes[3].ObjectName 3
+SetField TriggerVolumes[4].ObjectName 4
+SetField TriggerVolumes[5].ObjectName 5
+SetField TriggerVolumes[6].ObjectName 6
+SetField TriggerVolumes[7].ObjectName 7
+SetField TriggerVolumes[8].ObjectName 8
+SetField TriggerVolumes[9].ObjectName 9
+SetField TriggerVolumes[10].ObjectName 10
+SetField TriggerVolumes[11].ObjectName 11
+SetField TriggerVolumes[12].ObjectName 12
+SetField TriggerVolumes[13].ObjectName 13
+SetField TriggerVolumes[14].ObjectName 14
+SetField TriggerVolumes[15].ObjectName 15
+SetField TriggerVolumes[16].ObjectName 16
+SetField TriggerVolumes[17].ObjectName 17
+SetField TriggerVolumes[18].ObjectName 18
+SetField TriggerVolumes[19].ObjectName 19
+SetField TriggerVolumes[20].ObjectName 20
+SetField TriggerVolumes[21].ObjectName 21
+SetField TriggerVolumes[22].ObjectName 22
+SetField TriggerVolumes[23].ObjectName 23
+SetField TriggerVolumes[24].ObjectName 24
+SetField TriggerVolumes[25].ObjectName 25
+SetField TriggerVolumes[26].ObjectName 26
+SetField TriggerVolumes[27].ObjectName 27
+SetField TriggerVolumes[28].ObjectName 28
+SetField TriggerVolumes[29].ObjectName 29
+
+AddBlockElements ScriptingData
+AddBlockElements ScriptingData[0].PointSets
+SetField ScriptingData[0].PointSets[0].Name "set"
+SetField ScriptingData[0].PointSets[0].ManualReferenceFrame -1
+SetField ScriptingData[0].PointSets[0].EditorFolderIndex -1
+AddBlockElements ScriptingData[0].PointSets[0].Points 30
+# For whatever reason, if each axis is not at least 0.1, ai won't move towards it, and it doesn't seem to be avoidance, since we did z a whole one world unit
+ForEach ScriptingData[0].PointSets[0].Points SetField Position 0.1 0.1 0.1
+ForEach ScriptingData[0].PointSets[0].Points SetField BspIndex -1
+ForEach ScriptingData[0].PointSets[0].Points SetField ZoneIndex -1
+SetField ScriptingData[0].PointSets[0].Points[0].Name "p0"
+SetField ScriptingData[0].PointSets[0].Points[1].Name "p1"
+SetField ScriptingData[0].PointSets[0].Points[2].Name "p2"
+SetField ScriptingData[0].PointSets[0].Points[3].Name "p3"
+SetField ScriptingData[0].PointSets[0].Points[4].Name "p4"
+SetField ScriptingData[0].PointSets[0].Points[5].Name "p5"
+SetField ScriptingData[0].PointSets[0].Points[6].Name "p6"
+SetField ScriptingData[0].PointSets[0].Points[7].Name "p7"
+SetField ScriptingData[0].PointSets[0].Points[8].Name "p8"
+SetField ScriptingData[0].PointSets[0].Points[9].Name "p9"
+SetField ScriptingData[0].PointSets[0].Points[10].Name "p10"
+SetField ScriptingData[0].PointSets[0].Points[11].Name "p11"
+SetField ScriptingData[0].PointSets[0].Points[12].Name "p12"
+SetField ScriptingData[0].PointSets[0].Points[13].Name "p13"
+SetField ScriptingData[0].PointSets[0].Points[14].Name "p14"
+SetField ScriptingData[0].PointSets[0].Points[15].Name "p15"
+SetField ScriptingData[0].PointSets[0].Points[16].Name "p16"
+SetField ScriptingData[0].PointSets[0].Points[17].Name "p17"
+SetField ScriptingData[0].PointSets[0].Points[18].Name "p18"
+SetField ScriptingData[0].PointSets[0].Points[19].Name "p19"
+SetField ScriptingData[0].PointSets[0].Points[20].Name "p20"
+SetField ScriptingData[0].PointSets[0].Points[21].Name "p21"
+SetField ScriptingData[0].PointSets[0].Points[22].Name "p22"
+SetField ScriptingData[0].PointSets[0].Points[23].Name "p23"
+SetField ScriptingData[0].PointSets[0].Points[24].Name "p24"
+SetField ScriptingData[0].PointSets[0].Points[25].Name "p25"
+SetField ScriptingData[0].PointSets[0].Points[26].Name "p26"
+SetField ScriptingData[0].PointSets[0].Points[27].Name "p27"
+SetField ScriptingData[0].PointSets[0].Points[28].Name "p28"
+SetField ScriptingData[0].PointSets[0].Points[29].Name "p29"
+SetField ScriptingData[0].PointSets[0].Points[0].ReferenceFrame 0
+SetField ScriptingData[0].PointSets[0].Points[1].ReferenceFrame 1
+SetField ScriptingData[0].PointSets[0].Points[2].ReferenceFrame 2
+SetField ScriptingData[0].PointSets[0].Points[3].ReferenceFrame 3
+SetField ScriptingData[0].PointSets[0].Points[4].ReferenceFrame 4
+SetField ScriptingData[0].PointSets[0].Points[5].ReferenceFrame 5
+SetField ScriptingData[0].PointSets[0].Points[6].ReferenceFrame 6
+SetField ScriptingData[0].PointSets[0].Points[7].ReferenceFrame 7
+SetField ScriptingData[0].PointSets[0].Points[8].ReferenceFrame 8
+SetField ScriptingData[0].PointSets[0].Points[9].ReferenceFrame 9
+SetField ScriptingData[0].PointSets[0].Points[10].ReferenceFrame 10
+SetField ScriptingData[0].PointSets[0].Points[11].ReferenceFrame 11
+SetField ScriptingData[0].PointSets[0].Points[12].ReferenceFrame 12
+SetField ScriptingData[0].PointSets[0].Points[13].ReferenceFrame 13
+SetField ScriptingData[0].PointSets[0].Points[14].ReferenceFrame 14
+SetField ScriptingData[0].PointSets[0].Points[15].ReferenceFrame 15
+SetField ScriptingData[0].PointSets[0].Points[16].ReferenceFrame 16
+SetField ScriptingData[0].PointSets[0].Points[17].ReferenceFrame 17
+SetField ScriptingData[0].PointSets[0].Points[18].ReferenceFrame 18
+SetField ScriptingData[0].PointSets[0].Points[19].ReferenceFrame 19
+SetField ScriptingData[0].PointSets[0].Points[20].ReferenceFrame 20
+SetField ScriptingData[0].PointSets[0].Points[21].ReferenceFrame 21
+SetField ScriptingData[0].PointSets[0].Points[22].ReferenceFrame 22
+SetField ScriptingData[0].PointSets[0].Points[23].ReferenceFrame 23
+SetField ScriptingData[0].PointSets[0].Points[24].ReferenceFrame 24
+SetField ScriptingData[0].PointSets[0].Points[25].ReferenceFrame 25
+SetField ScriptingData[0].PointSets[0].Points[26].ReferenceFrame 26
+SetField ScriptingData[0].PointSets[0].Points[27].ReferenceFrame 27
+SetField ScriptingData[0].PointSets[0].Points[28].ReferenceFrame 28
+SetField ScriptingData[0].PointSets[0].Points[29].ReferenceFrame 29
+
+AddBlockElements ObjectReferenceFrames 30
+ForEach ObjectReferenceFrames SetField OriginBspIndex -1
+ForEach ObjectReferenceFrames SetField ObjectType.Halo3ODST Crate
+ForEach ObjectReferenceFrames SetField Source Editor
+SetField ObjectReferenceFrames[0].ObjectHandle 40000 0
+SetField ObjectReferenceFrames[1].ObjectHandle 40001 1
+SetField ObjectReferenceFrames[2].ObjectHandle 40002 2
+SetField ObjectReferenceFrames[3].ObjectHandle 40003 3
+SetField ObjectReferenceFrames[4].ObjectHandle 40004 4
+SetField ObjectReferenceFrames[5].ObjectHandle 40005 5
+SetField ObjectReferenceFrames[6].ObjectHandle 40006 6
+SetField ObjectReferenceFrames[7].ObjectHandle 40007 7
+SetField ObjectReferenceFrames[8].ObjectHandle 40008 8
+SetField ObjectReferenceFrames[9].ObjectHandle 40009 9
+SetField ObjectReferenceFrames[10].ObjectHandle 40010 10
+SetField ObjectReferenceFrames[11].ObjectHandle 40011 11
+SetField ObjectReferenceFrames[12].ObjectHandle 40012 12
+SetField ObjectReferenceFrames[13].ObjectHandle 40013 13
+SetField ObjectReferenceFrames[14].ObjectHandle 40014 14
+SetField ObjectReferenceFrames[15].ObjectHandle 40015 15
+SetField ObjectReferenceFrames[16].ObjectHandle 40016 16
+SetField ObjectReferenceFrames[17].ObjectHandle 40017 17
+SetField ObjectReferenceFrames[18].ObjectHandle 40018 18
+SetField ObjectReferenceFrames[19].ObjectHandle 40019 19
+SetField ObjectReferenceFrames[20].ObjectHandle 40020 20
+SetField ObjectReferenceFrames[21].ObjectHandle 40021 21
+SetField ObjectReferenceFrames[22].ObjectHandle 40022 22
+SetField ObjectReferenceFrames[23].ObjectHandle 40023 23
+SetField ObjectReferenceFrames[24].ObjectHandle 40024 24
+SetField ObjectReferenceFrames[25].ObjectHandle 40025 25
+SetField ObjectReferenceFrames[26].ObjectHandle 40026 26
+SetField ObjectReferenceFrames[27].ObjectHandle 40027 27
+SetField ObjectReferenceFrames[28].ObjectHandle 40028 28
+SetField ObjectReferenceFrames[29].ObjectHandle 40029 29

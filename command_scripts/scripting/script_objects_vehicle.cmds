@@ -1,0 +1,94 @@
+AddBlockElements ObjectNames 10
+ForEach ObjectNames From: 80 To: 89 SetField ObjectType.Halo3ODST Vehicle
+SetField ObjectNames[80].Name "vehi0"
+SetField ObjectNames[81].Name "vehi1"
+SetField ObjectNames[82].Name "vehi2"
+SetField ObjectNames[83].Name "vehi3"
+SetField ObjectNames[84].Name "vehi4"
+SetField ObjectNames[85].Name "vehi5"
+SetField ObjectNames[86].Name "vehi6"
+SetField ObjectNames[87].Name "vehi7"
+SetField ObjectNames[88].Name "vehi8"
+SetField ObjectNames[89].Name "vehi9"
+SetField ObjectNames[80].PlacementIndex 0
+SetField ObjectNames[81].PlacementIndex 1
+SetField ObjectNames[82].PlacementIndex 2
+SetField ObjectNames[83].PlacementIndex 3
+SetField ObjectNames[84].PlacementIndex 4
+SetField ObjectNames[85].PlacementIndex 5
+SetField ObjectNames[86].PlacementIndex 6
+SetField ObjectNames[87].PlacementIndex 7
+SetField ObjectNames[88].PlacementIndex 8
+SetField ObjectNames[89].PlacementIndex 9
+
+AddBlockElements VehiclePalette
+SetField VehiclePalette[0].Object objects\eldewrito\movie\scripting\script_vehi.vehicle
+
+AddBlockElements Vehicles 10
+ForEach Vehicles SetField ObjectId.OriginBspIndex -1
+ForEach Vehicles SetField ObjectId.Type.Halo3ODST Vehicle
+ForEach Vehicles SetField ObjectId.Source Editor
+ForEach Vehicles SetField EditingBoundToBsp -1
+ForEach Vehicles SetField EditorFolder -1
+ForEach Vehicles SetField ParentId.NameIndex -1
+ForEach Vehicles SetField CanAttachToBspFlags 1
+ForEach Vehicles SetField Multiplayer.Team Neutral
+ForEach Vehicles SetField Multiplayer.MapVariantParent.NameIndex -1
+SetField Vehicles[0].NameIndex 80
+SetField Vehicles[1].NameIndex 81
+SetField Vehicles[2].NameIndex 82
+SetField Vehicles[3].NameIndex 83
+SetField Vehicles[4].NameIndex 84
+SetField Vehicles[5].NameIndex 85
+SetField Vehicles[6].NameIndex 86
+SetField Vehicles[7].NameIndex 87
+SetField Vehicles[8].NameIndex 88
+SetField Vehicles[9].NameIndex 89
+SetField Vehicles[0].Position 0.0 2 0
+SetField Vehicles[1].Position 0.1 2 0
+SetField Vehicles[2].Position 0.2 2 0
+SetField Vehicles[3].Position 0.3 2 0
+SetField Vehicles[4].Position 0.4 2 0
+SetField Vehicles[5].Position 0.5 2 0
+SetField Vehicles[6].Position 0.6 2 0
+SetField Vehicles[7].Position 0.7 2 0
+SetField Vehicles[8].Position 0.8 2 0
+SetField Vehicles[9].Position 0.9 2 0
+
+AddBlockElements TriggerVolumes 10
+ForEach TriggerVolumes From: 80 To: 89 SetField NodeName root
+ForEach TriggerVolumes From: 80 To: 89 SetField Forward 1 0 0
+ForEach TriggerVolumes From: 80 To: 89 SetField Up 0 0 1
+ForEach TriggerVolumes From: 80 To: 89 SetField KillVolume -1
+ForEach TriggerVolumes From: 80 To: 89 SetField EditorFolderIndex -1
+StringID Add id_vehi0
+StringID Add id_vehi1
+StringID Add id_vehi2
+StringID Add id_vehi3
+StringID Add id_vehi4
+StringID Add id_vehi5
+StringID Add id_vehi6
+StringID Add id_vehi7
+StringID Add id_vehi8
+StringID Add id_vehi9
+StringID Add id_vehi10
+SetField TriggerVolumes[80].Name id_vehi0
+SetField TriggerVolumes[81].Name id_vehi1
+SetField TriggerVolumes[82].Name id_vehi2
+SetField TriggerVolumes[83].Name id_vehi3
+SetField TriggerVolumes[84].Name id_vehi4
+SetField TriggerVolumes[85].Name id_vehi5
+SetField TriggerVolumes[86].Name id_vehi6
+SetField TriggerVolumes[87].Name id_vehi7
+SetField TriggerVolumes[88].Name id_vehi8
+SetField TriggerVolumes[89].Name id_vehi9
+SetField TriggerVolumes[80].ObjectName 80
+SetField TriggerVolumes[81].ObjectName 81
+SetField TriggerVolumes[82].ObjectName 82
+SetField TriggerVolumes[83].ObjectName 83
+SetField TriggerVolumes[84].ObjectName 84
+SetField TriggerVolumes[85].ObjectName 85
+SetField TriggerVolumes[86].ObjectName 86
+SetField TriggerVolumes[87].ObjectName 87
+SetField TriggerVolumes[88].ObjectName 88
+SetField TriggerVolumes[89].ObjectName 89
